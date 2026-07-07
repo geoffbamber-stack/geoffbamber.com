@@ -167,7 +167,7 @@ ul,ol{margin:1rem 0 0 1.25rem;padding-left:1.2rem}
 li{margin:.55rem 0;}
 
 /* ---------- ADVISORY CLIENTS ---------- */
-.clients{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.clients{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem}
 .client{
   border:1px solid #E4DCCB;padding:2.4rem 1.8rem;text-align:center;
   background:var(--warm-white);transition:border-color .25s,transform .25s;
