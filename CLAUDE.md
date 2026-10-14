@@ -22,23 +22,25 @@ and responsive. Prefer describing-then-editing over large rewrites.
 ## Page structure — homepage (in order)
 
 1. Sticky nav — Work / Advisory / Track record / Writing (→ writing.html) / Contact
-2. Hero (navy) — positioning statement, two CTAs, framed B&W portrait
-3. "What I do" (parchment) — three strands: Advisory, Governance, Value creation
+2. Hero (oxblood) — positioning statement, two CTAs, framed B&W portrait
+3. "What I do" (bone) — three strands: Advisory, Governance, Value creation
 4. Advisory clients (white) — Athx Games, Gelateria Danieli, London Gynaecology, Clava
-5. Track record (navy) — ledger of roles
+5. Track record (oxblood) — ledger of roles
 6. Writing (white) — three cards linking to `articles/*.html` + "View all writing" → writing.html
-7. About (parchment) — bio + credentials list
-8. Contact (navy) — email + social links, footer
+7. About (bone) — bio + credentials list
+8. Contact (oxblood) — email + social links, footer
 
 ## Brand / design tokens (defined as CSS variables in :root)
 
-- `--navy` #0F2038 (Oxford Navy, primary dark)
-- `--gold` #C39A3E (Aged Gold, accent) / `--gold-soft` #D8B968
-- `--parchment` #F4EFE4 / `--warm-white` #FBF9F4
-- `--ink` #1E2A3A body / `--muted` #5C6B7D secondary
+- Palette changed on 14 October 2026 from Oxford Navy and Aged Gold to oxblood and rose, to match the updated gb-design skill and to move away from the navy-and-gold look of AI-generated documents. No gold anywhere.
+- `--oxblood` #5C1A1F (primary dark grounds) / `--oxblood-panel` #6B2329 / `--oxblood-line` #7D3A3F
+- `--rose` #94604F (accent on light grounds; text-safe) / `--rose-soft` #B47C6E
+- On oxblood grounds (nav, hero, `.section-dark`, contact) `--rose` and `--rose-soft` are re-pointed to `--rose-on-dark` #D7A399 and `--rose-on-dark-soft` #E8C1B8, so accents stay legible. Keep that override when adding dark sections.
+- `--bone` #F2ECE5 / `--warm-white` #FBF9F6
+- `--ink` #231A1A body / `--muted` #5E5654 secondary / `--muted-light` #C9B2AB on dark
 - Type: Georgia (serif) for all display + body; system sans stack for eyebrows/labels
   (uppercase, letter-spaced). Keep this pairing.
-- Signature device: the gold hairline (hero underline + strand top-borders + ledger hover).
+- Signature device: the rose hairline (hero underline + strand top-borders + ledger hover).
 - Respects `prefers-reduced-motion`. Keep the responsive breakpoint at 820px working.
 
 ## ACCURACY — these facts are locked, do not reintroduce errors
