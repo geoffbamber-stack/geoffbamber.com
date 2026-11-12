@@ -179,6 +179,7 @@ li{margin:.55rem 0;}
   border:1px solid #DCD4CB;padding:2.4rem 1.8rem;text-align:center;
   background:var(--warm-white);transition:border-color .25s,transform .25s;
 }
+.client:last-child:nth-child(odd){grid-column:1/-1}
 .client:hover{transform:translateY(-3px);border-color:var(--rose)}
 .client-name{font-family:var(--serif);font-size:1.45rem;margin-bottom:.55rem}
 .client-sector{font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}
