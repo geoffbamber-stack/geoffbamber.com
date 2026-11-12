@@ -24,7 +24,8 @@ and responsive. Prefer describing-then-editing over large rewrites.
 1. Sticky nav — Work / Advisory / Track record / Writing (→ writing.html) / Contact
 2. Hero (oxblood) — positioning statement, two CTAs, framed B&W portrait
 3. "What I do" (bone) — three strands: Advisory, Governance, Value creation
-4. Advisory clients (white) — Athx Games, Gelateria Danieli, London Gynaecology, Clava
+4. Advisory clients (white) — Athx Games, Gelateria Danieli, London Gynaecology, Clava,
+   Sync Your Cycle (an odd final tile spans both columns of the 2-column grid)
 5. Track record (oxblood) — ledger of roles
 6. Writing (white) — three cards linking to `articles/*.html` + "View all writing" → writing.html
 7. About (bone) — bio + credentials list
@@ -49,6 +50,7 @@ and responsive. Prefer describing-then-editing over large rewrites.
   private-equity investment**. Never label him founder there.
 - Digme Fitness: he was **CEO** (not founder).
 - No unverified exit details (an earlier "Phoenix Equity Partners" line was removed).
+- Sync Your Cycle: Geoff is **Board Adviser to the founders** (not Chair, not NED).
 - "Verus" has been removed entirely — do not reintroduce it.
 - Any biographical claim not confirmed by Geoff should be flagged, not invented.
 
