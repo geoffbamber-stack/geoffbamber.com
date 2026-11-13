@@ -51,6 +51,8 @@ and responsive. Prefer describing-then-editing over large rewrites.
 - Digme Fitness: he was **CEO** (not founder).
 - No unverified exit details (an earlier "Phoenix Equity Partners" line was removed).
 - Sync Your Cycle: Geoff is **Board Adviser to the founders** (not Chair, not NED).
+- Bamber Global Prestige Index: Geoff is **author and publisher**. Links go to
+  https://www.bamberindex.com/ (About paragraph, credentials list, footer).
 - "Verus" has been removed entirely — do not reintroduce it.
 - Any biographical claim not confirmed by Geoff should be flagged, not invented.
 
