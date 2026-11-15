@@ -412,3 +412,10 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--rose-soft);outline-of
 .consent-btn:focus-visible,.consent-link:focus-visible{outline:2px solid var(--rose-on-dark-soft);outline-offset:3px}
 .consent-link{font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 .consent-link:hover{color:var(--rose)}
+
+/* Article sources list */
+.sources{margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--rose-soft);font-size:.92rem;color:var(--muted)}
+.sources h3{font-family:var(--sans,system-ui,sans-serif);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 .8rem;color:var(--muted)}
+.sources ul{margin:0;padding-left:1.1rem}
+.sources li{margin:.4rem 0}
+.article-standfirst{font-size:1.2rem;line-height:1.55;color:var(--muted);margin:1rem 0 0}
