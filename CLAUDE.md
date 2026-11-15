@@ -31,6 +31,18 @@ and responsive. Prefer describing-then-editing over large rewrites.
 7. About (bone) — bio + credentials list
 8. Contact (oxblood) — email + social links, footer
 
+## Imagery (added 15 November 2026)
+
+- Hero: solution-led headline, supporting line, `.hero-proof` line and two audience buttons
+  ("For investors" → #work, "For chief executives" → flightpath.html).
+- About: two photos of Geoff (`geoff_bamber_snow.jpg`, `geoff_bamber_ironman.jpg`) in
+  `.about-photos`; credentials list runs full width beneath in two columns.
+- Track record: each `.ledger-row` has a `.ledger-photo` in the first column. Photos show in
+  black and white and return to colour on hover.
+- Advisory: client names are logos in `logos/`, all converted to one tone (`--ink`). Keep new
+  logos one tone and use `.client-logo-short` / `.client-logo-tall` to balance heights.
+- Do not use photos that show recognisable patients, customers or members without consent.
+
 ## Brand / design tokens (defined as CSS variables in :root)
 
 - Palette changed on 14 October 2026 from Oxford Navy and Aged Gold to oxblood and rose, to match the updated gb-design skill and to move away from the navy-and-gold look of AI-generated documents. No gold anywhere.
