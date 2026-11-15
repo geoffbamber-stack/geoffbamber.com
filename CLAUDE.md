@@ -25,7 +25,8 @@ and responsive. Prefer describing-then-editing over large rewrites.
 1. Sticky nav — Track record / Work / Flightpath / Bamber Index / About, a "Get in touch"
    button and a mobile menu toggle (`site.js`). Same nav on every page.
 2. Hero (oxblood) — headline, supporting line, proof line, two audience buttons, B&W portrait
-3. Logo strip (white, `#advisory`) — "Companies I have worked with", five one-tone logos
+3. Logo strip (white, `#advisory`) — "Companies and ventures", five client logos plus the Bamber Index wordmark
+   (links to `#index`), all one tone
 4. Track record (oxblood, `#track`) — ledger of roles with photos, then a contact button
 5. "What I do" (bone, `#work`) — Deal Advisory, Governance, Operating mandates, Flightpath
 6. Bamber Index feature (oxblood, `#index`) — wordmark, description, link to bamberindex.com
