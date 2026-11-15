@@ -21,6 +21,18 @@ and responsive. Prefer describing-then-editing over large rewrites.
   founders). Geoff edited and approved the text; do not change their claims or add new ones
   under his name without his sign-off. Each ends with a `.sources` list.
 
+## SEO and article images (added 15 November 2026)
+
+- Every public page has a meta description, canonical URL (no `.html`, as Cloudflare serves
+  it), Open Graph and Twitter card tags. Articles also have `Article` JSON-LD; the homepage
+  has `Person` JSON-LD. Copy an existing article's `<head>` when adding a new one.
+- Each article has one chart in `img/<slug>-chart.svg` inside a `figure.article-figure`
+  (finding as `.fig-title`, measure as `.fig-sub`, source in `figcaption`, data in the `alt`)
+  and a share image `img/og-<slug>.jpg` (1200 x 630).
+- Charts and type only: no stock photography or generated imagery in articles. Every chart
+  figure must be checked against its source before publication.
+- Add each new page to `sitemap.xml`. `robots.txt` points to the sitemap and excludes `/thanks`.
+
 ## Analytics and cookie consent
 
 - Google Analytics 4 runs through `analytics.js`, included in the `<head>` of every page, `thanks.html` included
