@@ -48,7 +48,8 @@ and responsive. Prefer describing-then-editing over large rewrites.
 
 - Geoff did **NOT** found London Gynaecology. He was the **first CEO appointed after
   private-equity investment**. Never label him founder there.
-- Digme Fitness: he was **CEO** (not founder).
+- Digme Fitness: he was **co-founder and CEO** (confirmed by Geoff, 15 November 2026). The
+  business was **investor-backed, not PE-backed**; never call it PE-backed.
 - No unverified exit details (an earlier "Phoenix Equity Partners" line was removed).
 - Sync Your Cycle: Geoff is **Board Adviser to the founders** (not Chair, not NED).
 - Bamber Global Prestige Index: Geoff is **author and publisher**. Links go to
@@ -58,8 +59,6 @@ and responsive. Prefer describing-then-editing over large rewrites.
 
 ## Open to-dos / needs Geoff's input
 
-- [ ] About paragraph still says "as a founder" — confirm a genuinely founded business to
-      anchor it, or drop that phrase.
 - [ ] London Gynaecology appears in BOTH Advisory clients and Track record (as CEO). Decide:
       keep in both, or show in one only.
 - [ ] Writing: pages/tiles are built, but the three article titles are still placeholders and
