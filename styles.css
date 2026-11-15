@@ -194,6 +194,7 @@ li{margin:.55rem 0;}
 .client-name{font-family:var(--serif);font-size:1.45rem;margin-bottom:.55rem}
 .client-logo{display:block;height:2.1rem;width:auto;max-width:100%;margin:0 auto}
 .client-logo-tall{height:2.9rem}
+.client-logo-short{height:1.55rem}
 .client-sector{font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}
 
 /* ---------- LEDGER (track record) ---------- */
