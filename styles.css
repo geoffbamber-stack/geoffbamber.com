@@ -388,6 +388,14 @@ li{margin:.55rem 0;}
 .about-text p a,.credentials a{color:var(--ink);border-bottom:1px solid var(--rose);transition:color .2s}
 .about-text p a:hover,.about-text p a:focus,.credentials a:hover,.credentials a:focus{color:var(--rose)}
 
+/* ---------- BAMBER INDEX FEATURE ---------- */
+.index-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:4.5rem;align-items:center}
+.index-mark img{display:block;width:100%;max-width:340px;height:auto;margin:1.6rem 0 1.1rem}
+.index-edition{font-family:var(--sans);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted-light)}
+.index-copy{border-left:1px solid var(--oxblood-line);padding-left:4.5rem}
+.index-copy h2{font-family:var(--serif);font-weight:normal;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.2;color:var(--warm-white)}
+.index-copy p{color:#EBDDD8;font-size:1.05rem;line-height:1.65;max-width:46ch;margin:1.3rem 0 2rem}
+
 /* ---------- CONTACT / FOOTER ---------- */
 .contact{background:var(--oxblood);color:var(--warm-white);padding:6rem 0 3rem}
 .contact h2{font-family:var(--serif);font-weight:normal;font-size:clamp(1.9rem,4vw,2.8rem);max-width:18ch;line-height:1.15}
@@ -439,6 +447,9 @@ li{margin:.55rem 0;}
   .nav-links a{padding:.95rem 0;border-bottom:1px solid var(--oxblood-line);color:var(--warm-white)}
   .nav-links a:last-child{border-bottom:0}
   .logo-row{justify-content:flex-start;gap:1.6rem 2.2rem}
+  .index-grid{grid-template-columns:1fr;gap:2.4rem}
+  .index-mark img{max-width:260px}
+  .index-copy{border-left:0;padding-left:0;border-top:1px solid var(--oxblood-line);padding-top:2.2rem}
   .hero-grid{gap:2.4rem}
   .hero{padding:5rem 0 4.5rem}
   .section{padding:4rem 0}

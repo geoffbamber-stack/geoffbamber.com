@@ -20,17 +20,18 @@ and responsive. Prefer describing-then-editing over large rewrites.
 - Article bodies are scaffolded with a dashed `.placeholder` box + a `.prose` container.
   Real article text is NOT yet written — do not invent it under Geoff's name.
 
-## Page structure — homepage (in order)
+## Page structure — homepage (in order, revised 15 November 2026)
 
-1. Sticky nav — Work / Advisory / Track record / Writing (→ writing.html) / Contact
-2. Hero (oxblood) — positioning statement, two CTAs, framed B&W portrait
-3. "What I do" (bone) — three strands: Advisory, Governance, Value creation
-4. Advisory clients (white) — Athx Games, Gelateria Danieli, London Gynaecology, Clava,
-   Sync Your Cycle (an odd final tile spans both columns of the 2-column grid)
-5. Track record (oxblood) — ledger of roles
-6. Writing (white) — three cards linking to `articles/*.html` + "View all writing" → writing.html
-7. About (bone) — bio + credentials list
-8. Contact (oxblood) — email + social links, footer
+1. Sticky nav — Track record / Work / Flightpath / Bamber Index / About, a "Get in touch"
+   button and a mobile menu toggle (`site.js`). Same nav on every page.
+2. Hero (oxblood) — headline, supporting line, proof line, two audience buttons, B&W portrait
+3. Logo strip (white, `#advisory`) — "Companies I have worked with", five one-tone logos
+4. Track record (oxblood, `#track`) — ledger of roles with photos, then a contact button
+5. "What I do" (bone, `#work`) — Deal Advisory, Governance, Operating mandates, Flightpath
+6. Bamber Index feature (oxblood, `#index`) — wordmark, description, link to bamberindex.com
+7. Writing — hidden until real articles exist
+8. About (white, `#about`) — bio, two photos, credentials list
+9. Contact (oxblood, `#contact`) — form (Web3Forms, redirects to `thanks.html`), footer
 
 ## Imagery (added 15 November 2026)
 
