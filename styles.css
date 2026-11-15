@@ -355,9 +355,11 @@ li{margin:.55rem 0;}
 /* ---------- ABOUT ---------- */
 .about{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .about-text p{font-size:1.05rem;line-height:1.7;color:var(--ink);margin-bottom:1.2rem;max-width:46ch}
-.about-photo{position:relative;justify-self:end;width:100%;max-width:400px}
-.about-photo::before{
-  content:"";position:absolute;top:1rem;left:1rem;right:-1rem;bottom:-1rem;
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;align-items:start;justify-self:end;width:100%;max-width:520px}
+.about-photo{position:relative}
+.about-photo + .about-photo{margin-top:3.5rem}
+.about-photo:first-child::before{
+  content:"";position:absolute;top:-1rem;left:-1rem;right:1rem;bottom:1rem;
   border:1px solid var(--rose);z-index:0;
 }
 .about-photo img{position:relative;z-index:1;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
@@ -398,7 +400,7 @@ li{margin:.55rem 0;}
   .split,.checklists{grid-template-columns:1fr;gap:2.5rem}
   .panel,.panel-box{padding:1.6rem 1.4rem}
   .about{grid-template-columns:1fr;gap:2.5rem}
-  .about-photo{justify-self:start;max-width:300px}
+  .about-photos{justify-self:start;max-width:420px;padding-left:1rem}
   .credentials{display:block}
   .hero-grid{grid-template-columns:1fr;gap:3rem}
   .hero-portrait{justify-self:start;order:-1}
