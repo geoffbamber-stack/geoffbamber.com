@@ -38,7 +38,7 @@ and responsive. Prefer describing-then-editing over large rewrites.
 5. Track record (oxblood) — ledger of roles
 6. Writing (white) — three cards linking to `articles/*.html` + "View all writing" → writing.html
 7. About (bone) — bio + credentials list
-8. Contact (oxblood) — email + social links, footer
+8. Contact (oxblood) — Web3Forms enquiry form + social links, footer
 
 ## Brand / design tokens (defined as CSS variables in :root)
 
@@ -61,6 +61,8 @@ and responsive. Prefer describing-then-editing over large rewrites.
 - No unverified exit details (an earlier "Phoenix Equity Partners" line was removed).
 - "Verus" has been removed entirely — do not reintroduce it.
 - Any biographical claim not confirmed by Geoff should be flagged, not invented.
+- No public email address anywhere on the site (Geoff's decision, 15 November 2026). All contact goes
+  through the enquiry form on index.html#contact; other pages link to it with a "Send an enquiry" button.
 
 ## Open to-dos / needs Geoff's input
 
@@ -70,8 +72,6 @@ and responsive. Prefer describing-then-editing over large rewrites.
       keep in both, or show in one only.
 - [ ] Writing: pages/tiles are built, but the three article titles are still placeholders and
       the article bodies are empty `.placeholder` scaffolds — replace with real pieces.
-- [ ] Contact email is a placeholder `hello@geoffbamber.com` — set the real address.
-- [ ] LinkedIn / social links are stubbed (`href="#"`) — add real URLs.
 - [ ] Confirm exact credential names (HBS "AI Certification", Stanford GSB "Executive Education").
 - [ ] Advisory sector tags (Gaming & interactive / Food & beverage / Private healthcare) —
       confirm or remove.
@@ -80,5 +80,4 @@ and responsive. Prefer describing-then-editing over large rewrites.
 
 - Build inner pages reusing the same tokens: fuller About, an Advisory detail page, a Writing
   index that can hold real articles.
-- Wire real links (LinkedIn, email).
 - Deploy to geoffbamber.com (registrar TBD — needed before pointing the domain at a host).
