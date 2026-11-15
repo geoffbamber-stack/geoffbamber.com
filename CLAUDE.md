@@ -19,7 +19,7 @@ and responsive. Prefer describing-then-editing over large rewrites.
     confirmation), `favicon.svg`, `og-image.jpg` (link-share image)
 - Three articles were published on 15 November 2026 (AI and EBITDA, carve-outs, systems over
   founders), followed the same day by `why-i-built-the-bamber-index` (launch article for the Bamber
-  Index, published 24 November 2026; links back to bamberindex.com; no chart). Geoff edited and approved the text; do not change their claims or add new ones
+  Index, published 24 November 2026; links back to bamberindex.com). Geoff edited and approved the text; do not change their claims or add new ones
   under his name without his sign-off. Each ends with a `.sources` list.
 
 ## SEO and article images (added 15 November 2026)
