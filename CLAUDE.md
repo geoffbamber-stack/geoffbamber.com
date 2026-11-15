@@ -17,20 +17,31 @@ and responsive. Prefer describing-then-editing over large rewrites.
   - `articles/*.html` — one page per article (link `../styles.css`, nav points back with `../`)
   - `styles.css`, `site.js` (mobile menu), `geoff_bamber_headshot.jpg`, `thanks.html` (form
     confirmation), `favicon.svg`, `og-image.jpg` (link-share image)
-- Article bodies are scaffolded with a dashed `.placeholder` box + a `.prose` container.
-  Real article text is NOT yet written — do not invent it under Geoff's name.
+- Three articles were published on 15 November 2026 (AI and EBITDA, carve-outs, systems over
+  founders). Geoff edited and approved the text; do not change their claims or add new ones
+  under his name without his sign-off. Each ends with a `.sources` list.
+
+## Analytics and cookie consent
+
+- Google Analytics 4 runs through `analytics.js`, included in the `<head>` of every page, `thanks.html` included
+  (`../analytics.js` from `articles/`). Add that script tag to any new page.
+- Google tag `GTM-5S2GHWW4`, measurement ID `G-6HG5FRV9HE` (GA account "Geoff Bamber",
+  property "geoffbamber.com"). Both are set at the top of `analytics.js`.
+- Nothing loads from Google and no cookie is set until the visitor clicks Accept on the
+  consent bar (`.consent-bar` in `styles.css`). The choice is stored in localStorage and can
+  be changed from the "Cookie preferences" link the script adds to the footer. Keep it that way.
 
 ## Page structure — homepage (in order, revised 15 November 2026)
 
-1. Sticky nav — Track record / Work / Flightpath / Bamber Index / About, a "Get in touch"
+1. Sticky nav — Track record / Work / Flightpath / Bamber Index / Writing / About, a "Get in touch"
    button and a mobile menu toggle (`site.js`). Same nav on every page.
 2. Hero (oxblood) — headline, supporting line, proof line, two audience buttons, B&W portrait
 3. Logo strip (white, `#advisory`) — "Companies and ventures", five client logos plus the Bamber Index wordmark
    (links to `#index`), all one tone
 4. Track record (oxblood, `#track`) — ledger of roles with photos, then a contact button
 5. "What I do" (bone, `#work`) — Deal Advisory, Governance, Operating mandates, Flightpath
-6. Bamber Index feature (oxblood, `#index`) — wordmark, description, link to bamberindex.com
-7. Writing — hidden until real articles exist
+6. Writing (white, `#writing`) — three cards linking to `articles/*.html` + "View all writing"
+7. Bamber Index feature (oxblood, `#index`) — wordmark, description, link to bamberindex.com
 8. About (white, `#about`) — bio, two photos, credentials list
 9. Contact (oxblood, `#contact`) — form (Web3Forms, redirects to `thanks.html`), footer
 
@@ -71,15 +82,13 @@ and responsive. Prefer describing-then-editing over large rewrites.
   https://www.bamberindex.com/ (About paragraph, credentials list, footer).
 - "Verus" has been removed entirely — do not reintroduce it.
 - Any biographical claim not confirmed by Geoff should be flagged, not invented.
+- No public email address anywhere on the site (Geoff's decision, 15 November 2026). All contact goes
+  through the enquiry form on index.html#contact; other pages link to it with a "Send an enquiry" button.
 
 ## Open to-dos / needs Geoff's input
 
 - [ ] London Gynaecology appears in BOTH Advisory clients and Track record (as CEO). Decide:
       keep in both, or show in one only.
-- [ ] Writing: pages/tiles are built, but the three article titles are still placeholders and
-      the article bodies are empty `.placeholder` scaffolds — replace with real pieces.
-- [ ] Contact email is a placeholder `hello@geoffbamber.com` — set the real address.
-- [ ] LinkedIn / social links are stubbed (`href="#"`) — add real URLs.
 - [ ] Confirm exact credential names (HBS "AI Certification", Stanford GSB "Executive Education").
 - [ ] Advisory sector tags (Gaming & interactive / Food & beverage / Private healthcare) —
       confirm or remove.
@@ -88,5 +97,4 @@ and responsive. Prefer describing-then-editing over large rewrites.
 
 - Build inner pages reusing the same tokens: fuller About, an Advisory detail page, a Writing
   index that can hold real articles.
-- Wire real links (LinkedIn, email).
 - Deploy to geoffbamber.com (registrar TBD — needed before pointing the domain at a host).
