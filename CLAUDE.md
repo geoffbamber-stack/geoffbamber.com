@@ -15,7 +15,8 @@ and responsive. Prefer describing-then-editing over large rewrites.
   - `index.html` — homepage
   - `writing.html` — writing index (tile layout)
   - `articles/*.html` — one page per article (link `../styles.css`, nav points back with `../`)
-  - `styles.css`, `geoff_bamber_headshot.png`
+  - `styles.css`, `site.js` (mobile menu), `geoff_bamber_headshot.jpg`, `thanks.html` (form
+    confirmation), `favicon.svg`, `og-image.jpg` (link-share image)
 - Article bodies are scaffolded with a dashed `.placeholder` box + a `.prose` container.
   Real article text is NOT yet written — do not invent it under Geoff's name.
 

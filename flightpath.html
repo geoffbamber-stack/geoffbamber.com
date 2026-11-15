@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flightpath | Geoff Bamber</title>
 <meta name="description" content="Flightpath is a service for the PE-backed CEO: a trusted confidant who has sat where you sit, engaged by you and answerable only to you.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,13 +14,14 @@
 <nav>
   <div class="wrap nav-inner">
     <a href="index.html" class="wordmark">Geoff <b>Bamber</b></a>
-    <div class="nav-links">
+    <div class="nav-links" id="nav-links">
+      <a href="index.html#track">Track record</a>
       <a href="index.html#work">Work</a>
       <a href="flightpath.html">Flightpath</a>
-      <a href="index.html#advisory">Advisory</a>
-      <a href="index.html#track">Track record</a>
-      <a href="#enquire">Contact</a>
+      <a href="index.html#about">About</a>
     </div>
+    <a href="#enquire" class="nav-cta">Get in touch</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
@@ -144,6 +147,8 @@
     <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="886e6d17-dc25-4bf3-a3f9-d06b472002fb">
       <input type="hidden" name="from_name" value="Geoff Bamber website: Flightpath">
+      <input type="hidden" name="redirect" value="https://geoffbamber.com/thanks.html">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
       <label>
         <span>Your name</span>
         <input type="text" name="name" placeholder="Your name" required>
@@ -173,5 +178,6 @@
   </div>
 </section>
 
+<script src="site.js" defer></script>
 </body>
 </html>
