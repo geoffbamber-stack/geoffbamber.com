@@ -16,8 +16,9 @@ and responsive. Prefer describing-then-editing over large rewrites.
   - `writing.html` — writing index (tile layout)
   - `articles/*.html` — one page per article (link `../styles.css`, nav points back with `../`)
   - `styles.css`, `geoff_bamber_headshot.png`
-- Article bodies are scaffolded with a dashed `.placeholder` box + a `.prose` container.
-  Real article text is NOT yet written — do not invent it under Geoff's name.
+- Three articles were published on 15 November 2026 (AI and EBITDA, carve-outs, systems over
+  founders). Geoff edited and approved the text; do not change their claims or add new ones
+  under his name without his sign-off. Each ends with a `.sources` list.
 
 ## Analytics and cookie consent
 
@@ -70,8 +71,6 @@ and responsive. Prefer describing-then-editing over large rewrites.
       anchor it, or drop that phrase.
 - [ ] London Gynaecology appears in BOTH Advisory clients and Track record (as CEO). Decide:
       keep in both, or show in one only.
-- [ ] Writing: pages/tiles are built, but the three article titles are still placeholders and
-      the article bodies are empty `.placeholder` scaffolds — replace with real pieces.
 - [ ] Confirm exact credential names (HBS "AI Certification", Stanford GSB "Executive Education").
 - [ ] Advisory sector tags (Gaming & interactive / Food & beverage / Private healthcare) —
       confirm or remove.
