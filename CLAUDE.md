@@ -19,6 +19,16 @@ and responsive. Prefer describing-then-editing over large rewrites.
 - Article bodies are scaffolded with a dashed `.placeholder` box + a `.prose` container.
   Real article text is NOT yet written — do not invent it under Geoff's name.
 
+## Analytics and cookie consent
+
+- Google Analytics 4 runs through `analytics.js`, included in the `<head>` of every page
+  (`../analytics.js` from `articles/`). Add that script tag to any new page.
+- Google tag `GTM-5S2GHWW4`, measurement ID `G-6HG5FRV9HE` (GA account "Geoff Bamber",
+  property "geoffbamber.com"). Both are set at the top of `analytics.js`.
+- Nothing loads from Google and no cookie is set until the visitor clicks Accept on the
+  consent bar (`.consent-bar` in `styles.css`). The choice is stored in localStorage and can
+  be changed from the "Cookie preferences" link the script adds to the footer. Keep it that way.
+
 ## Page structure — homepage (in order)
 
 1. Sticky nav — Work / Advisory / Track record / Writing (→ writing.html) / Contact

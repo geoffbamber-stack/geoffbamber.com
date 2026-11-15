@@ -391,3 +391,24 @@ li{margin:.55rem 0;}
   .hero h1 .accent::after{transform:scaleX(1)}
 }
 a:focus-visible,.btn:focus-visible{outline:2px solid var(--rose-soft);outline-offset:3px}
+
+/* ---------- COOKIE CONSENT ---------- */
+.consent-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:100;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.9rem 2rem;
+  padding:1rem 1.5rem;background:var(--oxblood);border-top:1px solid var(--rose-on-dark);
+  color:var(--warm-white);font-family:var(--sans);font-size:.82rem;line-height:1.5;letter-spacing:.02em;
+}
+.consent-bar p{margin:0;max-width:44rem}
+.consent-actions{display:flex;gap:.7rem}
+.consent-btn{
+  font:inherit;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;
+  padding:.6rem 1.1rem;cursor:pointer;background:transparent;
+  border:1px solid var(--oxblood-line);color:var(--warm-white);
+}
+.consent-btn:hover,.consent-btn:focus{border-color:var(--rose-on-dark);color:var(--rose-on-dark-soft)}
+.consent-btn-accept{background:var(--rose-on-dark);border-color:var(--rose-on-dark);color:var(--oxblood)}
+.consent-btn-accept:hover,.consent-btn-accept:focus{background:var(--rose-on-dark-soft);color:var(--oxblood)}
+.consent-btn:focus-visible,.consent-link:focus-visible{outline:2px solid var(--rose-on-dark-soft);outline-offset:3px}
+.consent-link{font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.consent-link:hover{color:var(--rose)}
