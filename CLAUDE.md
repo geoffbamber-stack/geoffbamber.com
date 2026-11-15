@@ -15,7 +15,8 @@ and responsive. Prefer describing-then-editing over large rewrites.
   - `index.html` — homepage
   - `writing.html` — writing index (tile layout)
   - `articles/*.html` — one page per article (link `../styles.css`, nav points back with `../`)
-  - `styles.css`, `geoff_bamber_headshot.png`
+  - `styles.css`, `site.js` (mobile menu), `geoff_bamber_headshot.jpg`, `thanks.html` (form
+    confirmation), `favicon.svg`, `og-image.jpg` (link-share image)
 - Three articles were published on 15 November 2026 (AI and EBITDA, carve-outs, systems over
   founders). Geoff edited and approved the text; do not change their claims or add new ones
   under his name without his sign-off. Each ends with a `.sources` list.
@@ -30,16 +31,31 @@ and responsive. Prefer describing-then-editing over large rewrites.
   consent bar (`.consent-bar` in `styles.css`). The choice is stored in localStorage and can
   be changed from the "Cookie preferences" link the script adds to the footer. Keep it that way.
 
-## Page structure — homepage (in order)
+## Page structure — homepage (in order, revised 15 November 2026)
 
-1. Sticky nav — Work / Advisory / Track record / Writing (→ writing.html) / Contact
-2. Hero (oxblood) — positioning statement, two CTAs, framed B&W portrait
-3. "What I do" (bone) — three strands: Advisory, Governance, Value creation
-4. Advisory clients (white) — Athx Games, Gelateria Danieli, London Gynaecology, Clava
-5. Track record (oxblood) — ledger of roles
-6. Writing (white) — three cards linking to `articles/*.html` + "View all writing" → writing.html
-7. About (bone) — bio + credentials list
-8. Contact (oxblood) — Web3Forms enquiry form + social links, footer
+1. Sticky nav — Track record / Work / Flightpath / Bamber Index / About / Writing, a "Get in touch"
+   button and a mobile menu toggle (`site.js`). Same nav on every page.
+2. Hero (oxblood) — headline, supporting line, proof line, two audience buttons, B&W portrait
+3. Logo strip (white, `#advisory`) — "Companies and ventures", five client logos plus the Bamber Index wordmark
+   (links to `#index`), all one tone
+4. Track record (oxblood, `#track`) — ledger of roles with photos, then a contact button
+5. "What I do" (bone, `#work`) — Deal Advisory, Governance, Operating mandates, Flightpath
+6. Bamber Index feature (oxblood, `#index`) — wordmark, description, link to bamberindex.com
+7. Writing (white, `#writing`) — three article cards + "View all writing" → writing.html
+8. About (white, `#about`) — bio, two photos, credentials list
+9. Contact (oxblood, `#contact`) — form (Web3Forms, redirects to `thanks.html`), footer
+
+## Imagery (added 15 November 2026)
+
+- Hero: solution-led headline, supporting line, `.hero-proof` line and two audience buttons
+  ("For investors" → #work, "For chief executives" → flightpath.html).
+- About: two photos of Geoff (`geoff_bamber_snow.jpg`, `geoff_bamber_ironman.jpg`) in
+  `.about-photos`; credentials list runs full width beneath in two columns.
+- Track record: each `.ledger-row` has a `.ledger-photo` in the first column. Photos show in
+  black and white and return to colour on hover.
+- Advisory: client names are logos in `logos/`, all converted to one tone (`--ink`). Keep new
+  logos one tone and use `.client-logo-short` / `.client-logo-tall` to balance heights.
+- Do not use photos that show recognisable patients, customers or members without consent.
 
 ## Brand / design tokens (defined as CSS variables in :root)
 
@@ -58,8 +74,12 @@ and responsive. Prefer describing-then-editing over large rewrites.
 
 - Geoff did **NOT** found London Gynaecology. He was the **first CEO appointed after
   private-equity investment**. Never label him founder there.
-- Digme Fitness: he was **CEO** (not founder).
+- Digme Fitness: describe him as **CEO** only, not co-founder (Geoff's latest instruction,
+  15 November 2026). The business was **investor-backed, not PE-backed**; never call it PE-backed.
 - No unverified exit details (an earlier "Phoenix Equity Partners" line was removed).
+- Sync Your Cycle: Geoff is **Board Adviser to the founders** (not Chair, not NED).
+- Bamber Global Prestige Index: Geoff is **author and publisher**. Links go to
+  https://www.bamberindex.com/ (About paragraph, credentials list, footer).
 - "Verus" has been removed entirely — do not reintroduce it.
 - Any biographical claim not confirmed by Geoff should be flagged, not invented.
 - No public email address anywhere on the site (Geoff's decision, 15 November 2026). All contact goes
@@ -67,8 +87,6 @@ and responsive. Prefer describing-then-editing over large rewrites.
 
 ## Open to-dos / needs Geoff's input
 
-- [ ] About paragraph still says "as a founder" — confirm a genuinely founded business to
-      anchor it, or drop that phrase.
 - [ ] London Gynaecology appears in BOTH Advisory clients and Track record (as CEO). Decide:
       keep in both, or show in one only.
 - [ ] Confirm exact credential names (HBS "AI Certification", Stanford GSB "Executive Education").
