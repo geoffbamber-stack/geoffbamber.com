@@ -355,7 +355,13 @@ li{margin:.55rem 0;}
 /* ---------- ABOUT ---------- */
 .about{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .about-text p{font-size:1.05rem;line-height:1.7;color:var(--ink);margin-bottom:1.2rem;max-width:46ch}
-.credentials{border-left:2px solid var(--rose);padding-left:1.8rem}
+.about-photo{position:relative;justify-self:end;width:100%;max-width:400px}
+.about-photo::before{
+  content:"";position:absolute;top:1rem;left:1rem;right:-1rem;bottom:-1rem;
+  border:1px solid var(--rose);z-index:0;
+}
+.about-photo img{position:relative;z-index:1;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.credentials{grid-column:1/-1;display:grid;grid-template-rows:repeat(5,auto);grid-auto-flow:column;grid-auto-columns:1fr;column-gap:4rem;border-left:2px solid var(--rose);padding-left:1.8rem}
 .credentials li{list-style:none;font-family:var(--sans);font-size:.9rem;color:var(--muted);padding:.55rem 0;letter-spacing:.01em}
 .credentials li strong{color:var(--ink);font-weight:600}
 .about-text p a,.credentials a{color:var(--ink);border-bottom:1px solid var(--rose);transition:color .2s}
@@ -392,6 +398,8 @@ li{margin:.55rem 0;}
   .split,.checklists{grid-template-columns:1fr;gap:2.5rem}
   .panel,.panel-box{padding:1.6rem 1.4rem}
   .about{grid-template-columns:1fr;gap:2.5rem}
+  .about-photo{justify-self:start;max-width:300px}
+  .credentials{display:block}
   .hero-grid{grid-template-columns:1fr;gap:3rem}
   .hero-portrait{justify-self:start;order:-1}
   .hero-portrait img{max-width:240px}
