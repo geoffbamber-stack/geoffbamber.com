@@ -195,10 +195,12 @@ li{margin:.55rem 0;}
 
 /* ---------- ADVISORY CLIENTS ---------- */
 .logo-strip{padding:2.6rem 0 2.9rem;background:var(--warm-white);border-bottom:1px solid #E6DED5}
-.logo-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.8rem 2.6rem;margin-top:1.5rem}
+.logo-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.8rem 2.2rem;margin-top:1.5rem}
 .logo-row .client-logo{height:1.75rem;opacity:.82}
 .logo-row .client-logo-tall{height:2.4rem}
 .logo-row .client-logo-short{height:1.3rem}
+.logo-row .logo-link{display:block;line-height:0}
+.logo-row .logo-link:hover .client-logo{opacity:1}
 .client-logo{display:block;height:2.1rem;width:auto;max-width:100%}
 .client-logo-tall{height:2.9rem}
 .client-logo-short{height:1.55rem}
